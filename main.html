@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODETEK E-LEARNING</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.hero {
+    background: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reasons, .stats, .how-to, .testimonials, .cta {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.reasons h2, .how-to h2, .cta h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.reason{
+    display: inline-block;
+    width: 350px;
+    margin: 20px 1.66%;
+}
+.stat {
+    display: inline-block;
+    width: 200px;
+    margin: 20px 1.66%;
+}
+.stats{
+    border: 0px solid;
+    background-color: #00ADEF;
+    height: 150px;
+}
+
+.reason img, .stat h3 {
+    margin-bottom: 10px;
+}
+
+.how-to .steps {
+    margin-bottom: 20px;
+}
+
+.how-to .steps button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.how-to .step-content {
+    font-size: 16px;
+    color: #080101;
+}
+.cta blockquote{
+    border: 0px solid;
+    height: 200px;
+   background-color: #f0f0f0;
+   text-align: center;
+   width: 1600px;
+   margin-left: -40px;
+}
+.how-to h2{
+    font-size: 40px;
+}
+.cta button{
+    font-size: 20px;
+    color:#fff ;
+    width: 350px;
+    background-color: #000;
+    height: 50px;
+}
+.stat h3 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: -10px;
+}
+.stat p{
+      color: #fff;
+      margin-top: -10px;
+}
+.step-content img{
+    margin-left: 400px;
+    margin-top: -270px;
+}
+.step-content{
+    width: 400px;
+    margin-left: 400px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.support1{
+    width: 500px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+.image1{
+      margin-bottom: -250px;
+      margin-left: 150px;
+}
+.image2{
+    margin-left: 1100px;
+    margin-top: -220px;
+}
+.carousel-slide{
+    width: 400px;
+    margin-left: 500px;
+    height: 100px;
+    margin-bottom: 200px;
+}
+.heroimage img{
+    width: 500px;
+    margin-left: 700px;
+    margin-top: -235px;
+}
+.hero-content{
+     width: 400px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="upper-nav">
+        <p>
+          Streamline your career success
+          <span>| Start learning toward your next big milestone today.</span>
+        </p>
+      </section>
+
+      <nav>
+        <div class="hamburger-menu">
+          <div class="ham-bar bar-top"></div>
+          <div class="ham-bar bar-mid"></div>
+          <div class="ham-bar bar-bottom"></div>
+        </div>
+        <a href="#">
+          <div class="nav-search" id="navLinks">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" style="color: black; background-color: white;">Categories</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="web.html">web develoment</a>
+                <a href="data science.html">data sciences</a>
+                <a href="javascript.html">javascript</a>
+                <a href="aws.html">aws certification</a>
+                <a href="index.html">python</a>
+              </div>
+            </div>
+          <a href="price.html">All Plans & Pricings</a>
+          <a href="business.html">Codetek Business</a>
+          <a href="main.html">Teach on Codetek</a>
+          <a href="login.html" class="login">Log In</a>
+          <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+        <div class="nav-right">
+          <a href="#"><img src="img/cart.png" alt="" /></a>
+          <a href="login.html"><button class="herobtn white">Log In</button></a>
+          <a href="signup.html"><button class="herobtn black">Sign Up</button></a>
+          <a href="#"><img src="img/lang.png" alt="" /></a>
+        </div>
+      </nav>
+    </header>
+
+     <section class="hero">
+        <div class="hero-content">
+            <h1>Come teach with us</h1>
+            <p>Become an instructor and change lives — including your own</p>
+            <button><b><a href="singup.html" style="color: azure;">Get started</a></b></button>
+        </div>
+            <div class="heroimage">
+                <img src="images (1).jpeg" alt="image">
+            </div>
+        
+    </section>
+
+    <section class="reasons">
+        <h2>So many reasons to start</h2>
+        <div class="reason">
+            <img src="one.png" alt="Teach your way" width="150px">
+            <h3>Teach your way</h3>
+            <p>Publish the course you want, in the way you want, and always have control of your own content.</p>
+        </div>
+        <div class="reason">
+            <img src="two.png" alt="Inspire learners" width="200px" height="200px">
+            <h3>Inspire learners</h3>
+            <p>Teach what you know and help learners explore their interests, gain new skills, and advance their careers.</p>
+        </div>
+        <div class="reason">
+            <img src="three.png" alt="Get rewarded" width="150px">
+            <h3>Get rewarded</h3>
+            <p>Expand your professional network, build your expertise, and earn money on each paid enrollment.</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h3>70M</h3>
+            <p>Students</p>
+        </div>
+        <div class="stat">
+            <h3>74+</h3>
+            <p>Languages</p>
+        </div>
+        <div class="stat">
+            <h3>970M</h3>
+            <p>Enrollments</p>
+        </div>
+        <div class="stat">
+            <h3>180+</h3>
+            <p>Countries</p>
+        </div>
+        <div class="stat">
+            <h3>16,000+</h3>
+            <p>Enterprise customers</p>
+        </div>
+    </section>
+
+    <section class="how-to">
+        <h2>How to begin</h2>
+        <div class="steps">
+            <button onclick="showStep('curriculum')">Plan your curriculum</button>
+            <button onclick="showStep('record')">Record your video</button>
+            <button onclick="showStep('launch')">Launch your course</button>
+        </div>
+        <div id="curriculum" class="step-content">
+            <p>You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.<br>The way that you teach — what you bring to it — is up to you.</p>
+            <h5>How we help you</h5>
+            <p>We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum pages help keep you organized.</p>
+            <img src="four.png" alt="Instructor" width="300px" >
+        </div>
+        <div id="record" class="step-content" style="display:none;" >
+            <p>Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you’re ready to start.<br>If you don’t like being on camera, just capture your screen. Either way, we recommend two hours or more of video for a paid course.</p>
+           <h5>How we help you</h5>
+           <p>Our support team is available to help you throughout the process and provide feedback on test videos.</p>
+           <img src="five.png" alt="Instructor" width="300px">
+        </div>
+        <div id="launch" class="step-content" style="display:none;">
+            <p>Gather your first ratings and reviews by promoting your course through social media and your professional networks.<br>Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.</p>
+            <h5>How we help you</h5>
+            <p>Our custom coupon tool lets you offer enrollment incentives while our global promotions drive traffic to courses. There’s even more opportunity for courses chosen for Udemy Business.</p>
+            <img src="six.png" alt="Instructor" width="300px">
+        </div>
+    </section>
+   <!--  <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    <section>
+        <div id="carouselExampleAutoplaying" class="carousel-slide" data-bs-ride="carousel" transition-duration="1s">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="1.png" class="d-block w-100" alt="slide 1" >
+              </div>
+              <div class="carousel-item">
+                <img src="ten.jpeg" class="d-block w-100" alt="slide 2" width="70px" height="200px">
+               
+              </div>
+              <div class="carousel-item">
+                <img src="elivin.jpg" class="d-block w-100" alt="slide 3" >
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         </section> -->
+    <section class="support">
+        <div class="image1">
+        <img src="seven.jpg" alt="Instructor" width="350px">
+    </div>
+    <div class="support1">
+        <h2>You won't have to do it alone</h2>
+        <p>Our <b>Instructor Support Team</b> is here to answer your questions and review your test video, while our <b>Teaching Center</b> gives you plenty of resources to help you through the process. Plus, get the support of experienced instructors in our <b>online community.</b></p>
+        <a href="#">Need more details before you start? Learn more.</a>
+      </div>
+        <div class="image2">
+        <img src="eight.jpeg" alt="Instructor" width="350px">
+    </div>
+    </section>
+    <section class="cta">
+        <blockquote>
+        <h2>Become an instructor today</h2>
+        <p>Join one of the world's largest online learning marketplaces.</p>
+        <button><b><a href="singup.html" style="color: azure;">Get started</a></b></button>
+        </blockquote>
+    </section>
+    <footer>
+      <div class="footer-up">
+        <div class="footer-nav">
+          <div>
+            <p><a href="business.html">Codetek Business</a></p>
+            <p><a href="main.html">Teach on Codetek</a></p>
+            <p><a href="#">Get the app</a></p>
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Contact us</a></p>
+          </div>
+          <div>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Blog</a></p>
+            <p><a href="#">Help and Support</a></p>
+            <p><a href="#">Affiliate</a></p>
+            <p><a href="#">Investors</a></p>
+          </div>
+          <div>
+            <p><a href="#">Terms</a></p>
+            <p><a href="#">Privacy policy</a></p>
+            <p><a href="#">Sitemap</a></p>
+          </div>
+        </div>
+
+
+
+      
+        <div class="footer-down">
+          <div>
+            <img src="img/logo.jpg" alt="" width="50px" height="50px" style="margin-right: 5px;"/>
+          </div>
+          <div>
+            <p>© 2024 Codetek, Inc.</p>
+          </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+    <script>
+        function showStep(step) {
+            var steps = document.getElementsByClassName('step-content');
+            for (var i = 0; i < steps.length; i++) {
+                steps[i].style.display = 'none';
+            }
+            document.getElementById(step).style.display = 'block';
+        }
+    </script>
+</html>

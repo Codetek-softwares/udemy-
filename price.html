@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codetek Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #00ADEF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+}
+
+.pricing {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pricing h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pricing p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.plan {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.plan h2 {
+    margin-top: 0;
+    color: #00ADEF;
+}
+
+.plan p {
+    margin: 0.5rem 0;
+}
+
+.plan button {
+    margin-top: 1rem;
+    padding: 0.5rem 3rem;
+    border: none;
+    background-color: #00ADEF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 0.5rem 0;
+}
+.trusted-by {
+            text-align: center;
+            margin-top: 40px;
+        }
+.trusted-by img {
+            margin: 20px;
+        }
+.testimonials {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compare {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.compare h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.compare table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.compare th,
+.compare td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+
+.faq h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+.faq-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+.faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0;
+        }
+.faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+.faq-answer p {
+            margin: 0;
+        }
+
+.footer-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container p {
+    margin-bottom: 2rem;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <section class="upper-nav">
+            <p>
+              Streamline your career success
+              <span>| Start learning toward your next big milestone today.</span>
+            </p>
+          </section>
+    
+          <nav>
+            <div class="hamburger-menu">
+              <div class="ham-bar bar-top"></div>
+              <div class="ham-bar bar-mid"></div>
+              <div class="ham-bar bar-bottom"></div>
+            </div>
+            <a href="#">
+              <img src="img/logo.jpg" alt="logo" width="50px" height="50px" />
+            </a>
+            <div class="nav-search" id="navLinks">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn" style="color: black; background-color: white;">Categories</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="web.html">web develoment</a>
+                    <a href="data science.html">data sciences</a>
+                    <a href="javascript.html">javascript</a>
+                    <a href="aws.html">aws certification</a>
+                    <a href="index.html">python</a>
+                  </div>
+                </div>
+              <a href="price.html">All Plans & Pricings</a>
+              <a href="business.html">Codetek Business</a>
+              <a href="main.html">Teach on Codetek</a>
+              <a href="login.html" class="login">Log In</a>
+              <a href="signup.html" class="signup">Sign Up</a>
+            </div>
+            <div class="nav-right">
+              <a href="#"><img src="img/cart.png" alt="" /></a>
+              <a href="login.html"><button class="herobtn white">Log In</button></a>
+              <a href="signup.html"><button class="herobtn black">Sign Up</button></a>
+              <a href="#"><img src="img/lang.png" alt="" /></a>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="pricing">
+            <h1>Choose a plan for success</h1>
+            <p>Don't want to buy courses one by one? Pick a plan to help you, your team, or your organization achieve outcomes faster.</p>
+            <div class="plans">
+                <div class="plan">
+                    <h2>Personal Plan</h2>
+                    <p>For you</p>
+                    <p>(Individual)</p>
+                    <p><strong>Starting at ₹850 per month</strong></p>
+                    <p>Billed monthly or annually. Cancel anytime.</p>
+                    <button>Start subscription</button>
+                    <ul>
+                        <li>&check; &nbsp; Access to 11,000+ top courses</li>
+                        <li>&check; &nbsp;Certification prep</li>
+                        <li>&check; &nbsp;Goal-focused recommendations</li>
+                        <li>&check; &nbsp;AI-powered coding exercises</li>
+                    </ul>
+                </div>
+                <div class="plan">
+                    <h2>Team Plan</h2>
+                    <p>For your team</p>
+                    <p>(2 to 20 people)</p>
+                    <p><strong>₹1,167 a month per user</strong></p>
+                    <p>Billed annually. Cancel anytime.</p>
+                    <button>Start subscription</button>
+                    <ul>
+                        <li>&check; &nbsp;Access to 11,000+ top courses</li>
+                        <li>&check; &nbsp;Certification prep</li>
+                        <li>&check; &nbsp;Goal-focused recommendations</li>
+                        <li>&check; &nbsp;AI-powered coding exercises</li>
+                        <li>&check; &nbsp;Analytics and adoption reports</li>
+                    </ul>
+                </div>
+                <div class="plan">
+                    <h2>Enterprise Plan</h2>
+                    <p>For your whole organization</p>
+                    <p>(More than 20 people)</p>
+                    <p><strong>Contact sales for pricing</strong></p>
+                    <button>Request a demo</button>
+                    <ul>
+                        <li>&check; &nbsp;Access to 25,000+ top courses</li>
+                        <li>&check; &nbsp;Certification prep</li>
+                        <li> &check; &nbsp;Goal-focused recommendations</li>
+                        <li>&check; &nbsp; AI-powered coding exercises</li>
+                        <li>&check; &nbsp; Advanced analytics and insights</li>
+                        <li> &check; &nbsp;Dedicated customer success team</li>
+                        <li> &check; &nbsp;International course collection featuring 15 languages</li>
+                        <li> &check; &nbsp;Customizable content</li>
+                        <li>&check; &nbsp; Hands-on tech training with add-on</li>
+                        <li> &check; &nbsp;Strategic implementation services with add-on</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="trusted-by" style="background-color: #f1efef; border-radius: 7px; margin-top: 40px;">
+            <p style="font-size: 18px; color: #333; margin-top: 40px;">Trusted by over 16,000 companies and millions of learners around the world
+            </p>
+            <img src="volkswagen.jpg" alt="Volkswagen" width="100">
+            <img src="samsung.png" alt="Samsung" width="100">
+            <img src="cisco.png" alt="Cisco" width="100">
+            <img src="at&t.png" alt="AT&T" width="100">
+            <img src="p&g1.jpg" alt="P&G" width="100">
+            <img src="hewlett packard.png" alt="Hewlett Packard Enterprise" width="100">
+            <img src="citi.png" alt="Citi" width="100">
+            <img src="ericsson.jpg" alt="Ericsson" width="100">
+        </div>
+        <br>
+        <br>
+
+        <div class="estimonial">
+            <h2>See what others are achieving through learning</h2>
+            <br>
+            <section class="testimonials" style="display: flex; gap: 20px;">
+              <div class="testimonial">
+                <p>Codetek was rated the most popular online course or certification program for learning how to code according to StackOverflow’s 2023 Developer survey.</p>
+                <p style="color: #555; font-size: 12px;">- <img src="./chefs.png" height="20px" width="22px"> StackOverflow</p>
+                <br>
+                <a>View Web Development Course ></a>
+              </div>
+              <div class="testimonial">
+                <p>Codetek was truly a game-changer and a great guide for me as we brought Dimensional to life.</p>
+                <p  style="color: #555; font-size: 12px;">- <img src="./chefs.png" height="20px" width="22px"> Alan Lim, Co-Founder, CTO at Dimensional</p>
+                <br>
+                <a>View This iOS & Swift Course ></a>
+              </div>
+              <div class="testimonial">
+                <p>Codetek gives you the ability to be persistent. I learned exactly what I needed to know in the real world. It helped me sell myself to get a new role.</p>
+                <p  style="color: #555; font-size: 12px;">- <img src="./chefs.png" height="20px" width="22px"> William Alricson, Program Manager at Amazon Web Services</p>
+                <br>
+                <a>View AWS Course ></a>
+              </div>
+              <div class="testimonial">
+                
+                <p>With Codetek Business employees were able to marry the top hardware, technology, and consultant soft skills... to help drive their careers forward.</p>
+                <p  style="color: #555; font-size: 12px;">- <img src="./chefs.png" height="20px" width="22px">Siennas Miller, Head of Capability Development, North America at Publicis Sapient</p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Sienna_Miller">Read Full Story ></a>
+              </div>
+            </section>
+        </div>
+
+        <section class="compare">
+            <h2>Compare plans and features</h2>
+            <table>
+                <thead style="background-color: #f1efef;">
+                    <tr>
+                        <th>
+                            Included in plan-<br>
+                            Available with add-on</th>
+                        <th>Personal Plan <br><p style="color: #555; font-size: 12px;">
+                             (Individual)<br>Starting at ₹850 per month</p></th>
+                        <th>Team Plan <br><p style="color: #555; font-size: 12px;"> (2 to 20 people)<br>Team Plan
+                            ₹1,167 a month per user</p></th>
+                        <th>Enterprise PlanFor your whole organization<br><p style="color: #555; font-size: 12px;">(More than 20 people)<br>Contact sales for pricing</p><br></th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: white;">
+                    <tr>
+                        <td>Top-rated courses</td>
+                        <td>11,000+</td>
+                        <td>11,000+</td>
+                        <td>26,000+</td>
+                    </tr>
+                    <tr>
+                        <td>Certification prep courses and practice tests</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>AI-powered coding exercises</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>Goal-aligned recommendations</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>Instructor Q&A</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile app access</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>User adoption and engagement reports</td>
+                        <td></td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>24/7 customer support</td>
+                        <td></td>
+                        <td>&check;</td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>Custom learning paths, courses, and user groups</td>
+                        <td></td>
+                        <td></td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>User activity, learning trends, and benchmark insights</td>
+                        <td></td>
+                        <td></td>
+                        <td>&check;</td>
+                    </tr>
+                    <tr>
+                        <td>Integration capabilities</td>
+                        <td></td>
+                        <td></td>
+                        <td>&check;</td>
+                    </tr>
+                </tbody>
+                </table>
+        </section>
+        <section class="faq-container">
+            <h1 style="margin-left: 300px;">Frequently asked questions</h1>
+            <div class="faq-item">
+                <h3 class="faq-question" onclick="toggleAnswer(this)">How are courses selected for the plans?</h3>
+                <div class="faq-answer">
+                    <p>The courses are curated based on quality, popularity, and relevance to various professional fields and skills.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question" onclick="toggleAnswer(this)">How is Personal Plan different from buying a course?</h3>
+                <div class="faq-answer">
+                    <p>With the Personal Plan, you get access to a wide range of courses rather than purchasing individual courses. This provides more flexibility and variety in learning.</p>
+
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question" onclick="toggleAnswer(this)">What languages does Enterprise Plan have content for?</h3>
+                <div class="faq-answer">
+                   <p>The Enterprise Plan offers a collection of international courses in 15 different languages.  </p>             
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question" onclick="toggleAnswer(this)">What is Codetek Business Pro?</h3>
+                <div class="faq-answer">
+                    <p>Yes, you can change your order within 24 hours of placing it. Please contact our customer service team for assistance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question" onclick="toggleAnswer(this)">What payment methods do you accept?</h3>
+                <div class="faq-answer">
+                    <p>Codetek Business Pro provides additional features such as skills assessments, labs, and technical workspaces for an enhanced learning experience.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const faqQuestions = document.querySelectorAll('.faq-question');
+    
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+                });
+            });
+        </script>
+    
+    </main>
+
+            <footer>
+              <div class="footer-up">
+                <div class="footer-nav">
+                  <div>
+                    <p><a href="#">Udemy Business</a></p>
+                    <p><a href="#">Teach on Udemy</a></p>
+                    <p><a href="#">Get the app</a></p>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Contact us</a></p>
+                  </div>
+                  <div>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Help and Support</a></p>
+                    <p><a href="#">Affiliate</a></p>
+                    <p><a href="#">Investors</a></p>
+                  </div>
+                  <div>
+                    <p><a href="#">Terms</a></p>
+                    <p><a href="#">Privacy policy</a></p>
+                    <p><a href="#">Do not sell or share my personal information</a></p>
+                    <p><a href="#">Sitemap</a></p>
+                    <p><a href="#">Accessibility statement</a></p>
+                  </div>
+                </div>
+        
+              <div class="footer-down">
+                <div>
+                  <img src="img/logo.jpg" alt="" width="50px" height="50px" />
+                </div>
+                <div>
+                  <p>© 2024 Codetek, Inc.</p>
+                </div>
+              </div>
+            </footer>
+        </body>
+</html>
+
+

@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.signup-box h1 {
+    margin-bottom: 20px;
+    color: #0a0a0a;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100%;
+    background-color:#54c2eb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #4ea4ea;
+}
+
+.alt-signup {
+    margin: 20px 0;
+}
+
+.alt-signup p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db4437; /* Default to Google color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.social-buttons a i {
+    margin-right: 10px;
+}
+
+.social-buttons a.google {
+    background-color: #db4437;
+}
+
+.social-buttons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-buttons a.linkedin {
+    background-color: #0077b5;
+}
+
+.social-buttons a:hover {
+    opacity: 0.8;
+}
+
+.start-learning {
+    margin-top: 20px;
+}
+
+.start-learning p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.start-learning-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.start-learning-btn:hover {
+    background-color: #2980b9;
+}
+@media screen and (max-width: 1100px) {
+    nav input {
+      width: 200px;
+    }
+  }
+  @media screen and (max-width: 1195px) {
+    nav input {
+      width: 200px;
+    }
+  }
+  @media screen and (max-width: 1045px) {
+    nav input {
+      width: 9.375rem;
+    }
+    nav {
+      font-size: 0.75rem;
+    }
+    nav .herobtn {
+      width: 3.125rem;
+      font-size: 0.625rem;
+    }
+    nav a {
+      padding: 0.3125rem;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .business h2 {
+      font-size: 1.75rem;
+      width: 18.75rem;
+    }
+    .business ul li {
+      font-size: 1.0625rem;
+      width: 21.875rem;
+    }
+    .instructor h2 {
+      font-size: 1.75rem;
+      width: 18.75rem;
+    }
+    .instructor p {
+      font-size: 1rem;
+      width: 18.75rem;
+    }
+  }
+  @media screen and (max-width: 799px) {
+   
+    .upper-nav {
+      font-size: 0.5625rem;
+    }
+   
+    .hamburger-menu {
+      height: 3.125rem;
+      width: 3.125rem;
+      position: relative;
+      cursor: pointer;
+      padding: 1rem;
+      z-index: 2;
+    }
+  
+    .ham-bar {
+      width: 70%;
+      height: 4px;
+      background-color: #000000;
+      border-radius: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.6s, opacity 0.8s, top 0.6s;
+    }
+  
+    .bar-top {
+      top: 25%;
+    }
+    .bar-bottom {
+      top: 75%;
+    }
+    .hamburger-menu.active .bar-top {
+      transform: translate(-50%, -50%) rotate(-315deg);
+      top: 50%;
+    }
+    .hamburger-menu.active .bar-mid {
+      opacity: 0;
+    }
+    .hamburger-menu.active .bar-bottom {
+      transform: translate(-50%, -50%) rotate(-225deg);
+      top: 50%;
+    }
+    #navLinks a {
+      display: block;
+      color: #ffffff;
+    }
+    #navLinks {
+      position: fixed;
+      top: 0;
+      right: -75%;
+      height: 100vh;
+      width: 55%;
+      transition: right 0.5s;
+      background: #000000;
+      text-align: left;
+      z-index: 2;
+    }
+    #navLinks a {
+      padding: 1.875rem 1.25rem;
+    }
+  
+    #navLinks.active {
+      right: 0;
+    }
+    .herobtn {
+      display: none;
+    }
+    .signup,
+    .login {
+      display: block;
+    }
+    nav input {
+      width: 11.875rem;
+      margin-left: 0.3125rem;
+    }
+    nav #label {
+      top: 6.375rem;
+      transform: translate(1.25rem, -50%);
+    }

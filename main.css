@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    background: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reasons, .stats, .how-to, .testimonials, .cta {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.reasons h2, .how-to h2, .cta h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.reason{
+    display: inline-block;
+    width: 350px;
+    margin: 20px 1.66%;
+}
+.stat {
+    display: inline-block;
+    width: 200px;
+    margin: 20px 1.66%;
+}
+.stats{
+    border: 0px solid;
+    background-color: #00ADEF;
+    height: 150px;
+}
+
+.reason img, .stat h3 {
+    margin-bottom: 10px;
+}
+
+.how-to .steps {
+    margin-bottom: 20px;
+}
+
+.how-to .steps button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.how-to .step-content {
+    font-size: 16px;
+    color: #080101;
+}
+.cta blockquote{
+    border: 0px solid;
+    height: 200px;
+   background-color: #f0f0f0;
+   text-align: center;
+   width: 1350px;
+   margin-left: -40px;
+}
+.how-to h2{
+    font-size: 40px;
+}
+.cta button{
+    font-size: 20px;
+    color:#fff ;
+    width: 350px;
+    background-color: #000;
+    height: 50px;
+}
+.stat h3 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: -10px;
+}
+.stat p{
+      color: #fff;
+      margin-top: -10px;
+}
+.step-content img{
+    margin-left: 500px;
+    margin-top: -270px;
+}
+.step-content{
+    width: 400px;
+    margin-left: 250px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.support1{
+    width: 500px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+.image1{
+      margin-bottom: -250px;
+      margin-left: 30px;
+}
+.image2{
+    margin-left: 950px;
+    margin-top: -220px;
+}
+.carousel-slide{
+    width: 400px;
+    margin-left: 500px;
+    height: 100px;
+    margin-bottom: 200px;
+}
+.heroimage img{
+    width: 500px;
+    margin-left: 700px;
+    margin-top: -235px;
+}
+.hero-content{
+     width: 400px;
+}

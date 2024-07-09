@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codetek Careers</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+           
+        }
+
+        nav a {
+            color: #333;
+            font-weight: 50;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ADEF;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .login {
+            background-color: transparent;
+            color: #00ADEF;
+            border: 2px solid #00ADEF;
+        }
+
+        .signup {
+            background-color: #00ADEF;
+            color: #fff;
+        }
+
+        .login:hover,
+        .signup:hover {
+            background-color:#00ADEF;
+            color: #fff;
+        }
+
+        .hero {
+            background: #f9f9f9;
+            text-align: center;
+            padding: 80px 20px;
+            margin-top: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-udemy {
+            text-align: center;
+            padding: 80px 20px;
+            margin-top: 20px;
+        }
+
+        .why-udemy h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .why-udemy p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .values {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value {
+            width: 30%;
+            text-align: left;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .value h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #00ADEF;
+        }
+
+        .value p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .value:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #00ADEF;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .view-jobs {
+            background-color: #fff;
+            color: #00ADEF;
+            border: 2px solid #fff;
+            margin-top: 20px;
+        }
+
+        .view-jobs:hover {
+            background-color: #00ADEF;
+            color: #fff;
+        }
+
+        .whycode nav ul li {
+            font-size: 18px;
+            display: flex;
+            margin-right: 160px;
+
+        }
+
+        nav ul li {
+            font-size: 16px;
+        }
+
+        .carousel {
+            position: relative;
+            width: 60%;
+            max-width: 1200px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            margin-left: 350px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+        }
+
+        .slide img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .slide blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .slide .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .slide .role {
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            outline: none;
+        }
+
+        .buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .benefit {
+            flex: 1 1 calc(25% - 40px);
+            margin: 20px;
+            padding: 20px;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit h3 {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .benefit p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .view-jobs {
+            text-align: center;
+            margin-top: 30px;
+        }
+        footer {
+  padding: 3.125rem 1.875rem;
+  background: #1c1d1f;
+  border-top: 0.0625rem solid #3e4143;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-nav div {
+  margin-right: 6.25rem;
+}
+.footer-nav p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.9375rem;
+}
+.footer-nav p a {
+  color: #ffffff;
+}
+.footer-nav p a:hover {
+  text-decoration: underline;
+}
+
+.globe {
+  display: flex;
+  align-items: center;
+  border: 0.125rem solid #ffffff;
+  padding: 0.625rem;
+  width: 7.5rem;
+  height: 2.5rem;
+}
+.globe a {
+  color: #f5f5f5;
+}
+
+.footer-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.125rem;
+}
+.footer-down p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.0625rem;
+  color: #ffffff;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <span class="logo">Codetek Careers</span>
+            <nav>
+                <ul style="font-size: 16px; gap: 24px; margin-right: 110px;">
+                    <li><a href="price.html">Plans & Pricing</a></li>
+                    <li><a href="main.html">Teach on Codetek</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="carrers.html">Careers</a></li>
+                    <li><a href="business.html">Business</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+               <a href="login.html"><button class="login">Login</button></a>
+               <a href="signup.html"><button class="signup">Sign Up</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" style="display: flex;">
+            <div>
+                <h1 style="font-size: 72px;">Let's revolutionize learning</h1>
+                <p>Individually, we bring our unique perspectives to reimagine the way knowledge is shared. Together, we
+                    can improve lives by empowering our employees, our learners, instructors, and businesses.</p>
+            </div>
+            <div class="image-container">
+                <img src="./pexels-fauxels-3184325.jpg" alt="Team meeting">
+            </div>
+        </section>
+        <header class="whycode" style="position: relative;">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Why Codetek?</a></li>
+                        <li><a href="#">Our Teams</a></li>
+                        <li><a href="#">Perks & Benefits</a></li>
+                        <li><a href="https://maps.app.goo.gl/pSgfuH1g7HxvWPMj9">Our Location</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+            <section class="why-Codetek">
+                <h1 style="margin-left: 700px; color: #00ADEF;">Why Codetek?</h1>
+                <p style="font-size: 18px; margin-left: 150px;">We aspire to be as vibrant and dynamic as the communities we serve, as
+                    inquisitive as those who use our platform, and as revolutionary as the future <br>we strive to open
+                    for everyone.</p>
+                <div class="values">
+                    <div class="value">
+                        <h2>Inclusive</h2>
+                        <img src="./whycodetek3.jpg.jpg" width="350px" height="220px" style="border-radius: 10px;">
+                        <p>When people feel supported, everyone benefits. We know that doesn't just happen,but we’re
+                            dedicated to making it a reality. We’re building teams as diverse as the people who use our
+                            platform. That way, we learn to see things from every perspective.</p>
+                    </div>
+                    <div class="value">
+                        <h2>Curious</h2>
+                        <img src="./whycodetek1.jpg.jpg" width="350px" height="220px" style="border-radius: 10px;">
+                        <p>Learning is who we are — inside and out. One reason we're so motivated to continue to learn
+                            worldwide is because we recognize the power it has for us at Udemy. We never stop evolving,
+                            and neither do you.
+                        </p>
+                    </div>
+                    <div class="value">
+                        <h2>Revolutionary</h2>
+                        <img src="./whycodetek2.jpg.jpg" width="350px" height="220px" style="border-radius: 10px;">
+                        <p>Why keep knowledge to yourself? We'd rather share it with the people who need it most. We
+                            improve the lives of the learners and instructors we serve-using our talents to empower
+                            theirs.</p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <h1 style="color: #00ADEF; margin-left: 700px;">Our Teams</h1><br>
+            <h style="font-size: 50px; margin-left: 600px; color: #00ADEF;"><strong>Employee Stories</strong></h>
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="./suba.jpg" alt="Cyndia Chambers">
+                        <blockquote>
+                            "Even though we are in early stage but the company has grown substantially,<br>
+                             the mission hasn't changed. In fact, the new value — courageously<br>
+                              experimental — is exactly what I'm about. <br>
+                            As someone who pushes the envelope and likes to look toward the future,<br>
+                             I felt like Udemy was the right place for me."
+                        </blockquote>
+                        <div class="author">SUBASH</div>
+                        <div class="role">Enterprise Customer Success Manager</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./vinaaa.jpg" alt="Employee 2">
+                        <blockquote>
+                            "Codetek offers an incredible opportunity to grow and learn.<br>
+                             The culture here is very supportive and encourages continuous improvement."
+                        </blockquote>
+                        <div class="author">VINAY</div>
+                        <div class="role">Software Engineer</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./madhesh.jpg.jpg" alt="Employee 3">
+                        <blockquote>
+                            "Working at Codetek has been a wonderful experience. <br>The team is diverse, talented, and <br>
+                            driven by a common goal of making education accessible."
+                        </blockquote>
+                        <div class="author">MADESH</div>
+                        <div class="role">Product Manager</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                </div>
+            </div>
+        
+            <script>
+                const slides = document.querySelector('.slides');
+                const slide = document.querySelectorAll('.slide');
+                let currentIndex = 0;
+        
+                document.getElementById('next').addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % slide.length;
+                    updateCarousel();
+                });
+        
+                document.getElementById('prev').addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+                    updateCarousel();
+                });
+        
+                function updateCarousel() {
+                    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+            </script>
+
+<div class="container">
+    <h1>Perks & Benefits</h1>
+    <div class="intro">
+        Of course, the best thing about being part of Codetek is knowing that your work makes a difference for people and organizations worldwide. We also have a great benefits package that makes life at Udemy even better. Instead of a one-size-fits-all approach, all our offerings are made to fit each of our international locations.
+    </div>
+    <div class="benefits">
+        <div class="benefit">
+            <h3>Learning incentives</h3>
+            <p>Free access to Codetek courses and Udemy Business — plus a yearly budget to spend on your professional development.</p>
+        </div>
+        <div class="benefit">
+            <h3>Learning programs</h3>
+            <p>Our amazing Learning and Development team regularly provides top-notch training sessions and company-wide learning initiatives.</p>
+        </div>
+        <div class="benefit">
+            <h3>Holistic care</h3>
+            <p>Mental health is vital. Look after yours with free access to the entire Headspace library. You can also access free coaching and therapy sessions through Modern Health.</p>
+        </div>
+        <div class="benefit">
+            <h3>Charitable matching</h3>
+            <p>Support a cause that matters to you. We match your donations up to an annual limit for eligible non-profits and charities.</p>
+        </div>
+        <div class="benefit">
+            <h3>BEDI program</h3>
+            <p>We prioritize diversity and inclusion through equitable hiring, retention, mobility, and leadership development. Our employee resource groups (ERGs) foster community and advocate for underrepresented groups.</p>
+        </div>
+    </div>
+        </main>
+        <footer>
+            <div class="footer-up">
+              <div class="footer-nav">
+                <div>
+                  <p><a href="business.html">Codetek Business</a></p>
+                  <p><a href="main.html">Teach on Codetek</a></p>
+                  <p><a href="#">Get the app</a></p>
+                  <p><a href="#">About us</a></p>
+                  <p><a href="#">Contact us</a></p>
+                </div>
+                <div>
+                  <p><a href="carrers.html">Careers</a></p>
+                  <p><a href="blog.html">Blog</a></p>
+                  <p><a href="#">Help and Support</a></p>
+                  <p><a href="#">Affiliate</a></p>
+                  <p><a href="#">Investors</a></p>
+                </div>
+                <div>
+                  <p><a href="#">Terms</a></p>
+                  <p><a href="#">Privacy policy</a></p>
+                  <p><a href="https://maps.app.goo.gl/jZNTNTLAUJuyG1qL9">Sitemap</a></p>
+                 
+                </div>
+              </div>
+      
+      
+            <div class="footer-down">
+              <div>
+                <img src="img/logo.jpg" alt="" width="50px" height="50px" style="margin-right: 5px;"/>
+              </div>
+              <div>
+                <p>© 2024 Codetek, Inc.</p>
+              </div>
+            </div>
+          </footer>
+</body>
+
+</html>

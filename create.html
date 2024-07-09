@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codetek Business Leadership Academy Signup</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo .udemy {
+    color: #00ADEF; /* Adjust the color as needed */
+}
+
+.logo .business {
+    color: #a3a3a3; /* Adjust the color as needed */
+    margin-left: 5px;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms {
+    font-size: 0.9em;
+}
+
+.terms a {
+    color: #00ADEF;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.create-account-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ADEF
+    color #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #00ADEF
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span class="udemy">Codetek</span> <span class="business">business</span>
+        </div>
+        <div class="profile-icon">
+          <a href="create.html"><img src="login icon 2.jpg" alt="Profile"></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form action="https://open.corpu.com/account/login/?next=/" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="work-email">Work Email</label>
+                    <input type="email" id="work-email" name="work-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>.</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="newsletters" name="newsletters">
+                    <label for="newsletters">I agree to receive newsletters and commercial offers from Codetek Business Leadership Academy.</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates">I agree to receive product updates and announcements from Codetek Business Leadership Academy.</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="create-account-button">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
